@@ -98,21 +98,23 @@ const Navbar = () => {
             </Link>
           ) : (
             <>
-              <DropdownMenu dir={locale == "en" ? "ltr" : "rtl"}>
-                <DropdownMenuTrigger asChild>
-                  <div className="relative cursor-pointer">
-                    {nums !== 0 && (
-                      <div className="absolute -top-2 -right-2 rounded-full w-[18px] h-[18px] bg-main !text-white text-[10px] grid place-content-center">
-                        {nums}
-                      </div>
-                    )}
-                    <ShoppingCart />
-                  </div>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-[400px] mx-4 p-6">
-                  <Cart sm={true} />
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <div className="hidden lg:block">
+                <DropdownMenu dir={locale == "en" ? "ltr" : "rtl"}>
+                  <DropdownMenuTrigger asChild>
+                    <div className="relative cursor-pointer">
+                      {nums !== 0 && (
+                        <div className="absolute -top-2 -right-2 rounded-full w-[18px] h-[18px] bg-main !text-white text-[10px] grid place-content-center">
+                          {nums}
+                        </div>
+                      )}
+                      <ShoppingCart />
+                    </div>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-[400px] mx-4 p-6">
+                    <Cart sm={true} />
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
 
               <Link href={`/${locale}/wishlist`} className="hidden lg:block">
                 <div className="relative">
