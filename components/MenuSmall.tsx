@@ -71,24 +71,28 @@ const MenuSmall = ({
               </Link>
             </li>
           ))}
-          <li>
-            <Link
-              onClick={() => setOpen(false)}
-              href={`/${locale}/wishlist`}
-              className="bg-white dark:bg-dark-100 block px-4 py-3 rounded-md"
-            >
-              {t("wishlist")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={() => setOpen(false)}
-              href={`/${locale}/cart`}
-              className="bg-white dark:bg-dark-100 block px-4 py-3 rounded-md"
-            >
-              {t("cart")}({nums})
-            </Link>
-          </li>
+          {isLoggedIn && (
+            <>
+              <li>
+                <Link
+                  onClick={() => setOpen(false)}
+                  href={`/${locale}/wishlist`}
+                  className="bg-white dark:bg-dark-100 block px-4 py-3 rounded-md"
+                >
+                  {t("wishlist")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => setOpen(false)}
+                  href={`/${locale}/cart`}
+                  className="bg-white dark:bg-dark-100 block px-4 py-3 rounded-md"
+                >
+                  {t("cart")}({nums})
+                </Link>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </>
