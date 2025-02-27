@@ -1,0 +1,225 @@
+{
+  "sign": {
+    "up": "Nice to see you With us",
+    "in": "Nice to see you again",
+    "forget": "Reset Password",
+    "update": "Update Data",
+    "profileUpdated": "Profile updated successfully!",
+    "E-mail already in use": "E-mail already in use",
+    "yourInfo": "Your Information",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "rePassword": "Confirm Password",
+    "newPassword": "New Password",
+    "phone": "Phone Number",
+    "nameMin": "Min Length Is 3",
+    "nameMax": "Max Length Is 20",
+    "emailInvalid": "Invalid email",
+    "phoneInvalid": "Invalid phone number",
+    "passwordMin": "Password must be at least 6 characters",
+    "passwordMismatch": "Passwords must match",
+    "forgetPas": "Forget Password?",
+    "resetCode": "Reset Code",
+    "minCode": "Min numbers is 6",
+    "send": "Send data",
+    "Loading": "Loading",
+    "haveAccount": "Already Have An Account?",
+    "dontHaveAccount": "Don't Have An Account?",
+    "Account Already Exists": "Account Already Exists",
+    "Incorrect email or password": "Incorrect email or password",
+    "accept only egypt phone numbers": "Accept only Egypt phone numbers",
+    "Something went wrong, please try again": "Something went wrong, please try again",
+    "somethingWrong": "Something went wrong, please try again",
+    "invaildresetcode": "Reset code is invalid or has expired"
+  },
+  "navbar": {
+    "Home": "Home",
+    "Products": "Products",
+    "Categories": "Categories",
+    "Brands": "Brands",
+    "cart": "Cart",
+    "wishlist": "wishlist"
+  },
+  "sliderLaning": {
+    "shop": "Shop Now",
+    "slide1": {
+      "small": "Opening Sale Discount 50%",
+      "header": "SuperMarket For Fresh Grocery",
+      "sub": "Introduced a new model for online grocery shopping and convenient home delivery."
+    },
+    "slide2": {
+      "small": "Free Shipping - orders over $100",
+      "header": "Free Shipping on orders over $100",
+      "sub": "Free Shipping to First-Time Customers Only, After promotions and discounts are applied."
+    }
+  },
+  "categories": {
+    "Categories": "Categories",
+    "Music": "Music",
+    "Men's Fashion": "Men's Fashion",
+    "Women's Fashion": "Women's Fashion",
+    "SuperMarket": "SuperMarket",
+    "Baby & Toys": "Baby & Toys",
+    "Home": "Home",
+    "Books": "Books",
+    "Beauty & Health": "Beauty & Health",
+    "Mobiles": "Mobiles",
+    "Electronics": "Electronics"
+  },
+  "grocery": {
+    "shop": "Shop Now",
+    "frout&Vega": "Fruits & Vegetables",
+    "off30": "Get Upto 30% Off",
+    "freshBaked": "Freshly Baked Buns",
+    "off25": "Get Upto 25% Off"
+  },
+  "products": {
+    "products": "Products",
+    "add": "Add",
+    "Filter": "Filter"
+  },
+  "BestSale": {
+    "title": "Daily Best Sells",
+    "head": "100% Organic Coffee Beans.",
+    "sub": "Get the best deal before close.",
+    "shop": "Shop Now",
+    "add": "Add"
+  },
+  "features": {
+    "feature1": {
+      "title": "10 Minute Grocery Now",
+      "description": "Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you."
+    },
+    "feature2": {
+      "title": "Best Prices & Offers",
+      "description": "Cheaper prices than your local supermarket, great cashback offers to top it off. Get best prices & offers."
+    },
+    "feature3": {
+      "title": "Wide Assortment",
+      "description": "Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories."
+    },
+    "feature4": {
+      "title": "Easy Returns",
+      "description": "Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy."
+    }
+  },
+  "filter": {
+    "Filter": "Filter",
+    "all": "All Products",
+    "searchNot": "Search By Name Don't Work",
+    "Categories": "Categories",
+    "Sort": "Sort",
+    "HTL": "Hight To Low",
+    "LTH": "Low To Hight",
+    "ZTA": "Z TO A",
+    "ATZ": "A To Z",
+    "normal": "Normal",
+    "Sortbytitle": "Sort By Title",
+    "Search": "Search",
+    "subcategries": "Sub categories"
+  },
+  "load": {
+    "Loading": "Loading"
+  },
+  "no": {
+    "noItems": "There Is No Items"
+  },
+  "subCate": {
+    "subcategries": "Sub Categories",
+    "Computer Accessories": "Computer Accessories",
+    "Computer Components": "Computer Components",
+    "Data Storage": "Data Storage",
+    "Networking Products": "Networking Products",
+    "Printers & Accessories": "Printers & Accessories",
+    "Cameras & Accessories": "Cameras & Accessories",
+    "Video Games": "Video Games",
+    "Audio & Home Entertainment": "Audio & Home Entertainment",
+    "Laptops & Accessories": "Laptops & Accessories",
+    "TVs, Satellites & Accessories": "TVs, Satellites & Accessories",
+    "Mobile Gaming & VR Gadgets": "Mobile Gaming & VR Gadgets",
+    "Covers & Screen protectors": "Covers & Screen protectors",
+    "Chargers & Cables": "Chargers & Cables",
+    "Power Banks": "Power Banks",
+    "Earphones": "Earphones",
+    "Wireless Earphones": "Wireless Earphones",
+    "Smartwatches & Accessories": "Smartwatches & Accessories",
+    "All Tablets": "All Tablets",
+    "All Mobile Phones": "All Mobile Phones",
+    "Mobile New Arrivals": "Mobile New Arrivals",
+    "Bags & luggage": "Bags & luggage",
+    "Men's Clothing": "Men's Clothing",
+    "Kid's Fashion": "Kid's Fashion",
+    "Handbags": "Handbags",
+    "Eyewear": "Eyewear",
+    "Jewellery": "Jewellery",
+    "Watches": "Watches",
+    "Footwear": "Footwear",
+    "Women's Clothing": "Women's Clothing",
+    "Kitchen & Dining": "Kitchen & Dining",
+    "Home Decor": "Home Decor",
+    "Furniture": "Furniture",
+    "Tools & Home Improvement": "Tools & Home Improvement",
+    "Bath & Bedding": "Bath & Bedding",
+    "Drinkware": "Drinkware",
+    "Cookware": "Cookware",
+    "Large Appliances": "Large Appliances",
+    "Home Appliances": "Home Appliances",
+    "Health & Nutrition": "Health & Nutrition",
+    "Personal Care": "Personal Care",
+    "Skin Care": "Skin Care",
+    "Hair Care": "Hair Care",
+    "Makeup": "Makeup",
+    "Fragrance": "Fragrance",
+    "Toys": "Toys",
+    "Potty Training": "Potty Training",
+    "Bouncers & Swings": "Bouncers & Swings",
+    "Car Seats & Strollers": "Car Seats & Strollers",
+    "Nursing & Feeding": "Nursing & Feeding",
+    "Bathing & Skin Care": "Bathing & Skin Care"
+  },
+  "profile": {
+    "profile": "Profile",
+    "log out": "Log out",
+    "My Account": "My Account"
+  },
+  "singalProduct": {
+    "price": "Price",
+    "quantinty": "Quantinty",
+    "descrpition": "Descrpition",
+    "Loading": "Loading",
+    "Add": "Add To Cart",
+    "Log In First": "Log In First"
+  },
+  "cart": {
+    "shopcart": "Shopping Cart",
+    "productAdded": "Product added to cart!",
+    "productRemoved": "Product removed from cart successfully",
+    "clearCart": "Clear Cart Successfully",
+    "Clear All": "Clear All",
+    "adding": "Adding",
+    "Loading": "Loading",
+    "total": "Total Price",
+    "check": "Check Out",
+    "view": "View Cart",
+    "cancel": "Cancel",
+    "warning": "This action cannot be undone. This will permanently delete your products from the cart.",
+    "confirmation": "Are you absolutely sure?"
+  },
+  "wishlist": {
+    "Add": "Add To Wishlist",
+    "Your Wishlist": "Your Wishlist",
+    "productAdded": "Product added to Wishlist!",
+    "productRemoved": "Product removed from Wishlist successfully"
+  },
+  "footer": {
+    "happy": "Nice to see you With us",
+    "keepInTouch": "Keep in Touch!",
+    "masterPasges": "Master pages",
+    "Home": "Home",
+    "Products": "Products",
+    "Categories": "Categories",
+    "Brands": "Brands",
+    "created": "Created By Salem Mamdouh"
+  }
+}
