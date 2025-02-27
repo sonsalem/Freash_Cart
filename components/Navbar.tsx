@@ -140,6 +140,7 @@ const Navbar = () => {
             setOpen={setOpen}
             isLoggedIn={isLoggedIn}
             nums={nums}
+            wishlistNums={wishlistNums}
           />
         </div>
       </div>

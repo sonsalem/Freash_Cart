@@ -11,11 +11,13 @@ const MenuSmall = ({
   setOpen,
   isLoggedIn,
   nums,
+  wishlistNums,
 }: {
   open: boolean;
   setOpen: any;
   isLoggedIn: null | string;
   nums: number | string;
+  wishlistNums: number | string;
 }) => {
   // Translation
   const t = useTranslations("navbar");
@@ -79,7 +81,7 @@ const MenuSmall = ({
                   href={`/${locale}/wishlist`}
                   className="bg-white dark:bg-dark-100 block px-4 py-3 rounded-md"
                 >
-                  {t("wishlist")}
+                  {t("wishlist")}({wishlistNums})
                 </Link>
               </li>
               <li>

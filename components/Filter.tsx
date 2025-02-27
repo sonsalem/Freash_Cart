@@ -97,7 +97,9 @@ const FilterProducts = ({ open, setOpen }: { open: boolean; setOpen: any }) => {
       >
         <X
           onClick={() => setOpen(false)}
-          className="absolute right-4 top-4 cursor-pointer lg:hidden"
+          className={`absolute top-4 cursor-pointer lg:hidden ${
+            locale == "en" ? "right-4" : "left-4"
+          }`}
         />
         <div className="text-2xl font-bold  mb-10">{t("Filter")}</div>
         <div className="flex flex-col gap-6">
