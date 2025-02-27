@@ -163,7 +163,7 @@ const ProductSinglePage = ({ id }: { id: string }) => {
               <div className="text-light-gray">{data.description}</div>
             </div>
             {token ? (
-              <div className="flex justify-center flex-wrap md:justify-between items-center gap-4">
+              <div className="flex justify-center flex-wrap flex-col md:flex-row md:justify-between items-center gap-4">
                 <Button
                   onClick={() =>
                     dispatch(
@@ -176,7 +176,7 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                     )
                   }
                   size="lg"
-                  className="!bg-main !w-[45%] hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-main"
+                  className="!bg-main hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-main"
                   disabled={cartLoading}
                 >
                   {!cartLoading ? t("Add") : `${t("Loading")}...`}
@@ -192,7 +192,7 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                     )
                   }
                   size="lg"
-                  className="!bg-pink-600 !text-sm md:!text-base  !w-[45%] hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-pink-600"
+                  className="!bg-pink-600 hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-pink-600"
                   disabled={wishLoading}
                 >
                   {!cartLoading ? tWish("Add") : `${t("Loading")}...`}
