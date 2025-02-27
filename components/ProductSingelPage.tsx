@@ -192,7 +192,7 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                     )
                   }
                   size="lg"
-                  className="!bg-pink-600 !w-[45%] hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-pink-600"
+                  className="!bg-pink-600 !text-sm md:!text-base  !w-[45%] hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-pink-600"
                   disabled={wishLoading}
                 >
                   {!cartLoading ? tWish("Add") : `${t("Loading")}...`}
