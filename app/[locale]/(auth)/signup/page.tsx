@@ -45,7 +45,7 @@ const SingUp = () => {
       );
 
       if (response?.data?.message === "success") {
-        router.push("/singin");
+        router.push(`/${locale}/signin`);
       }
     } catch (error: any) {
       console.log(error.response?.data);
