@@ -122,7 +122,7 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                 ({data.ratingsQuantity})
               </div>
             </div>
-            <div className="flex justify-between gap-4 mb-10">
+            <div className="flex justify-between gap-4">
               <div className="price">
                 <div className="text-light-gray mb-2 uppercase">
                   {t("price")}
@@ -156,6 +156,14 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                 </div>
               </div>
             </div>
+            <div className="mb-5">
+              <Image
+                src={`${data.brand.image}`}
+                alt="brandImage"
+                width={100}
+                height={100}
+              />
+            </div>
             <div className="dec mb-8">
               <div className="border-b-2 border-gray-300 dark:border-gray-800 pb-2 mb-4">
                 {t("descrpition")}
@@ -176,7 +184,7 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                     )
                   }
                   size="lg"
-                  className="!bg-main hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-main"
+                  className="!bg-main hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-main w-full md:flex-1"
                   disabled={cartLoading}
                 >
                   {!cartLoading ? t("Add") : `${t("Loading")}...`}
@@ -192,10 +200,10 @@ const ProductSinglePage = ({ id }: { id: string }) => {
                     )
                   }
                   size="lg"
-                  className="!bg-pink-600 hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-pink-600"
+                  className="!bg-pink-600 hover:!bg-transparent !text-white hover:!text-black dark:hover:!text-white ring-1 ring-pink-600 w-full md:flex-1"
                   disabled={wishLoading}
                 >
-                  {!cartLoading ? tWish("Add") : `${t("Loading")}...`}
+                  {!wishLoading ? tWish("Add") : `${t("Loading")}...`}
                 </Button>
               </div>
             ) : (

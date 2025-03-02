@@ -123,7 +123,9 @@ const wishlistSlice = createSlice({
       state.nums = 0;
       state.wishlistIds = [];
     });
-
+    builder.addCase(addToWishlist.pending, (state) => {
+      state.isLoading = true;
+    });
     builder.addCase(
       addToWishlist.fulfilled,
       (state, action: PayloadAction<any>) => {
@@ -134,7 +136,9 @@ const wishlistSlice = createSlice({
         }
       }
     );
-
+    builder.addCase(removeFromWishlist.pending, (state) => {
+      state.isLoading = true;
+    });
     builder.addCase(
       removeFromWishlist.fulfilled,
       (state, action: PayloadAction<string>) => {

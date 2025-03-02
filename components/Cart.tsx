@@ -135,19 +135,27 @@ const Cart = ({ sm }: { sm?: boolean }) => {
                         >
                           {/* IMAGE And DES */}
                           <div className="box flex gap-4">
-                            <Image
-                              src={prod.product?.imageCover}
-                              alt={prod.product?.title || "Product Image"}
-                              width={100}
-                              height={100}
-                              className="rounded-lg ring-1 ring-gray-300 dark:ring-gray-800"
-                            />
+                            <Link
+                              href={`/${locale}/products/${prod.product._id}`}
+                            >
+                              <Image
+                                src={prod.product?.imageCover}
+                                alt={prod.product?.title || "Product Image"}
+                                width={100}
+                                height={100}
+                                className="rounded-lg ring-1 ring-gray-300 dark:ring-gray-800"
+                              />
+                            </Link>
                             <div className="texts">
-                              <div className="text-semibold text-sm">
-                                {prod.product.title}
-                              </div>
                               <Link
-                                className="text-light-gray hover:text-main transition-all text-xs"
+                                href={`/${locale}/products/${prod.product._id}`}
+                              >
+                                <div className="text-semibold text-sm hover:text-main transition-all duration-500">
+                                  {prod.product.title}
+                                </div>
+                              </Link>
+                              <Link
+                                className="text-light-gray hover:text-main transition-all duration-500 text-xs"
                                 href={`/${locale}/products?category=${prod.product.category.name}-${prod.product.category._id}`}
                               >
                                 {tCat(prod.product.category.name)}
