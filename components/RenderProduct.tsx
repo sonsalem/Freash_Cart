@@ -27,37 +27,39 @@ const RenderProduct = ({ product }: { product: ProductPros }) => {
   return (
     <div className="block" key={product.id}>
       <div className="box p-5 rounded-lg ring-1 ring-gray-300 dark:ring-gray-800 hover:ring-main dark:hover:ring-main transition-all duration-500 relative">
-        <div
-          onClick={() => {
-            if (wishlistIds.includes(product._id)) {
-              dispatch(
-                removeFromWishlist({
-                  productId: product._id,
-                  token: `${token}`,
-                  text: tWish("productRemoved"),
-                })
-              );
-            } else {
-              dispatch(
-                addToWishlist({
-                  productId: product._id,
-                  token: `${token}`,
-                  text: tWish("productAdded"),
-                })
-              );
-            }
-          }}
-          className="absolute ring-1 ring-gray-300 dark:ring-gray-800 p-1 rounded-full top-2 right-2 cursor-pointer bg-white dark:bg-dark-200 shadow-md"
-        >
-          <Heart
-            size={14}
-            className={
-              wishlistIds.includes(product._id)
-                ? "stroke-pink-600 fill-pink-600"
-                : ""
-            }
-          />
-        </div>
+        {token && (
+          <div
+            onClick={() => {
+              if (wishlistIds.includes(product._id)) {
+                dispatch(
+                  removeFromWishlist({
+                    productId: product._id,
+                    token: `${token}`,
+                    text: tWish("productRemoved"),
+                  })
+                );
+              } else {
+                dispatch(
+                  addToWishlist({
+                    productId: product._id,
+                    token: `${token}`,
+                    text: tWish("productAdded"),
+                  })
+                );
+              }
+            }}
+            className="absolute ring-1 ring-gray-300 dark:ring-gray-800 p-1 rounded-full top-2 right-2 cursor-pointer bg-white dark:bg-dark-200 shadow-md"
+          >
+            <Heart
+              size={14}
+              className={
+                wishlistIds.includes(product._id)
+                  ? "stroke-pink-600 fill-pink-600"
+                  : ""
+              }
+            />
+          </div>
+        )}
 
         <Link href={`/${locale}/products/${product.id}`}>
           <div className="image mb-4 mx-auto w-fit">
